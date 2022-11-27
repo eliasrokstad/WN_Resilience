@@ -50,7 +50,7 @@ class substance_intrusion():
 
     def random_failure_sequences(self, x=1, n=10):
         result = pd.DataFrame(columns=['Simulation', 'Dimension', 'Aspect', 'Threshold', 'Reliability', 'Stress'])
-        stress = stress = np.logspace(0.1, 2, n, endpoint=True)/100
+        stress = np.logspace(0.1, 2, n, endpoint=True)/100
         elements = [int(s * self.total_nodes) for s in stress]
 
         for i in range(x):
